@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Adem Teker | Eğitim ve Yaşam Mimarı - Sınav Koçluğu & NLP</title>
+    <meta name="description" content="Adem Teker ile LGS, YKS, KPSS sınav koçluğu ve NLP destekli İngilizce eğitimi. Bursa ve Kahramanmaraş'ta öğrenci koçluğu ve eğitim danışmanlığı.">
+    <meta name="keywords" content="Adem Teker, Sınav Koçluğu, LGS Hazırlık, YKS Koçluk, NLP İngilizce, Bursa Özel Ders, Kahramanmaraş Eğitim, Başarmanın Ahlakı">
+    <meta name="author" content="Adem Teker">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI & Social Graph Optimization -->
+    <meta property="og:title" content="Adem Teker - Profesyonel Eğitim Koçu ve Yazar">
+    <meta property="og:description" content="Süre yetiştirme sorunlarına çözüm, hafıza teknikleriyle İngilizce ve öğrenci koçluğu.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Schema.org JSON-LD for AI and Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adem Teker",
+      "jobTitle": "Eğitim Yöneticisi ve Profesyonel Koç",
+      "url": "https://ademteker.com",
+      "sameAs": [
+        "https://www.instagram.com/ademteker",
+        "https://www.linkedin.com/in/ademteker"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Simya Eğitim Kurumları"
+      },
+      "author": {
+        "@type": "Book",
+        "name": "Başarmanın Ahlakı"
+      },
+      "knowsAbout": ["Sınav Koçluğu", "NLP", "İngilizce Eğitimi", "Öğrenci Psikolojisi", "Hafıza Teknikleri"]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#1A2B49', light: '#2a4066' },
+                        coral: { DEFAULT: '#FF6B6B', hover: '#ff5252' },
+                        sage: { DEFAULT: '#88B04B', light: '#a3c968' },
+                        cream: '#F9F7F2',
+                        dark: '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        hand: ['"Caveat"', 'cursive'],
+                    },
+                    boxShadow: {
+                        'axel': '0 20px 40px -15px rgba(26, 43, 73, 0.15)',
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .blob-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+        .lang-active {
+            font-weight: 800;
+            color: #FF6B6B;
+        }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 antialiased font-sans selection:bg-coral selection:text-white">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-serif font-bold text-xl">A</div>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-xl text-navy leading-none">Adem Teker</span>
+                        <span class="text-xs text-coral font-bold tracking-widest uppercase" data-i18n="tagline">Eğitim & Koçluk</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#hakkimda" class="text-gray-600 hover:text-navy font-medium transition" data-i18n="nav_about">Hakkımda</a>
+                    <a href="#hizmetler" class="text-gray-600 hover:text-navy font-medium transition" data-i18n="nav_services">Hizmetler</a>
+                    <a href="#kitap" class="text-gray-600 hover:text-navy font-medium transition" data-i18n="nav_book">Başarmanın Ahlakı</a>
+                    <a href="#blog" class="text-gray-600 hover:text-navy font-medium transition" data-i18n="nav_blog">Blog & Kaynaklar</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-2 text-sm font-medium border-l border-gray-200 pl-4">
+                        <button onclick="setLanguage('tr')" id="btn-tr" class="lang-active hover:text-navy transition">TR</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="setLanguage('en')" id="btn-en" class="text-gray-400 hover:text-navy transition">EN</button>
+                    </div>
+
+                    <a href="#iletisim" class="bg-navy text-white px-6 py-2.5 rounded-full font-medium hover:bg-coral transition duration-300 shadow-lg transform hover:-translate-y-0.5" data-i18n="nav_cta">
+                        Randevu Al
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium">
+                        <button onclick="setLanguage('tr')" class="text-navy font-bold">TR</button>
+                        <button onclick="setLanguage('en')" class="text-gray-400">EN</button>
+                    </div>
+                    <button id="mobile-menu-btn" class="text-navy hover:text-coral focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#hakkimda" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-coral" data-i18n="nav_about">Hakkımda</a>
+                <a href="#hizmetler" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-coral" data-i18n="nav_services">Hizmetler</a>
+                <a href="#kitap" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-coral" data-i18n="nav_book">Kitap</a>
+                <a href="#iletisim" class="block px-3 py-3 rounded-md text-base font-medium text-white bg-navy text-center mt-4" data-i18n="nav_contact_mobile">İletişime Geç</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sage/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-coral/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="space-y-8 animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
+                        <span class="text-sm font-semibold text-navy tracking-wide" data-i18n="hero_badge">Eğitim ve Yaşam Mimarı</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-serif font-bold text-navy leading-tight">
+                        <span data-i18n="hero_title_1">Kalbi eğitmeden</span> <br>
+                        <span class="relative inline-block">
+                            <span class="relative z-10" data-i18n="hero_title_2">zihni eğitmek</span>
+                            <svg class="absolute bottom-2 left-0 w-full h-3 text-coral/40 -z-0" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" />
+                            </svg>
+                        </span> <br>
+                        <span data-i18n="hero_title_3">eksik kalır.</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 max-w-lg leading-relaxed" data-i18n="hero_desc">
+                        LGS, YKS ve KPSS süreçlerinde %100 Organik Başarı için stratejik koçluk, NLP destekli dil eğitimi ve psikolojik sağlamlık. Bursa ve Kahramanmaraş ekseninde geleceği tasarlıyoruz.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#iletisim" class="px-8 py-4 bg-navy text-white rounded-lg font-semibold hover:bg-opacity-90 transition shadow-lg text-center flex items-center justify-center gap-2">
+                            <span data-i18n="hero_cta_primary">Sınav Koçluğu Al</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#hizmetler" class="px-8 py-4 bg-white text-navy border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition shadow-sm text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-play-circle text-coral"></i>
+                            <span data-i18n="hero_cta_secondary">Tanıtımı İzle</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual Content -->
+                <div class="relative hidden lg:block">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-navy to-coral opacity-10 blob-shape transform rotate-6 scale-110"></div>
+                    
+                    <div class="relative z-10 grid grid-cols-2 gap-4">
+                        <div class="space-y-4 mt-12">
+                            <!-- Değiştirilen Resim: Küçük Kız Çocuğu -->
+                            <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Küçük Öğrenci" class="rounded-2xl shadow-axel transform hover:-translate-y-2 transition duration-500">
+                            <div class="bg-white p-6 rounded-2xl shadow-card border-l-4 border-coral">
+                                <i class="fas fa-chart-line text-3xl text-navy mb-2"></i>
+                                <h3 class="font-bold text-navy" data-i18n="stat_title">Net Artışı</h3>
+                                <p class="text-sm text-gray-500" data-i18n="stat_desc">Süre yetiştirme sorununa kesin çözüm.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-navy p-6 rounded-2xl shadow-card text-white">
+                                <div class="text-4xl font-serif font-bold mb-1">15+</div>
+                                <p class="text-sm text-gray-300" data-i18n="exp_box">Yıllık Tecrübe &<br>Eğitim Yönetimi</p>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Koçluk" class="rounded-2xl shadow-axel h-64 object-cover transform hover:-translate-y-2 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (Bento Grid) -->
+    <section id="hizmetler" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-coral font-bold tracking-widest uppercase text-sm" data-i18n="services_sub">Eğitim Metodolojisi</span>
+                <h2 class="text-4xl font-serif font-bold text-navy mt-2" data-i18n="services_title">Hizmet Alanları</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto" data-i18n="services_intro">Sadece ders anlatan bir hoca değil, öğrencinin potansiyelini açığa çıkaran bir yol arkadaşı.</p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+                
+                <!-- Box 1: Sınav Koçluğu -->
+                <div class="md:row-span-2 rounded-3xl overflow-hidden relative group shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Sınav" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-8 flex flex-col justify-end">
+                        <div class="bg-coral text-white text-xs font-bold px-3 py-1 rounded w-max mb-4">LGS - YKS - KPSS</div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2" data-i18n="service_exam_title">Profesyonel Sınav Koçluğu</h3>
+                        <p class="text-gray-200 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0" data-i18n="service_exam_desc">
+                            Süre yetiştirememe sorununa çözümler, 12 aylık sıkı takip, dikkat dağınıklığı analizi ve kişiye özel çalışma programı.
+                        </p>
+                        <a href="#iletisim" class="text-white font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+                            <span data-i18n="btn_details">Detaylı İncele</span> <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Box 2: NLP İngilizce -->
+                <div class="bg-cream rounded-3xl p-8 flex flex-col justify-between shadow-card hover:shadow-xl transition relative overflow-hidden group border border-gray-100">
+                    <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-sage/20 rounded-full"></div>
+                    <div>
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+                            <i class="fas fa-language text-2xl text-navy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="service_nlp_title">NLP Destekli İngilizce</h3>
+                        <p class="text-sm text-gray-500" data-i18n="service_nlp_desc">2-8. Sınıflar ve LGS İngilizcesi. Ezber yok, hafıza teknikleriyle kalıcı öğrenme var.</p>
+                    </div>
+                    <div class="mt-4 flex items-center gap-2 text-coral font-hand text-xl rotate-[-2deg]">
+                        <span>Make it fun!</span> <i class="fas fa-smile"></i>
+                    </div>
+                </div>
+
+                <!-- Box 3: Yaşam Koçluğu -->
+                <div class="bg-navy rounded-3xl p-8 flex flex-col justify-between shadow-card text-white relative overflow-hidden">
+                    <svg class="absolute bottom-0 right-0 opacity-10" width="150" height="150" viewBox="0 0 200 200">
+                        <path fill="currentColor" d="M45,-76C58.3,-69.3,68.8,-56.8,76.5,-42.9C84.2,-29,89.1,-13.7,87.3,0.9C85.5,15.5,77,29.4,66.9,41.4C56.8,53.4,45.1,63.5,31.7,70.1C18.3,76.7,3.2,79.8,-11.2,78.2C-25.6,76.6,-39.3,70.3,-51.3,61.3C-63.3,52.3,-73.6,40.6,-79.6,27.1C-85.6,13.6,-87.3,-1.7,-81.7,-14.8C-76.1,-27.9,-63.2,-38.8,-50.8,-46.3C-38.4,-53.8,-26.5,-57.9,-14.3,-59.8C-2.1,-61.7,10,-61.4,22.1,-61.1L45,-76Z" transform="translate(100 100)" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2" data-i18n="service_life_title">Yaşam & Öğrenci Koçluğu</h3>
+                        <p class="text-gray-300 text-sm" data-i18n="service_life_desc">Sınav stresi, aile iletişimi ve ergenlik dönemi kriz yönetimi. "Dert Dinleme" seansları.</p>
+                    </div>
+                    <a href="#iletisim" class="inline-block mt-4 text-sage hover:text-white transition" data-i18n="btn_appointment">Randevu Oluştur &rarr;</a>
+                </div>
+
+                <!-- Box 4: Kitap -->
+                <div class="md:col-span-2 bg-white border border-gray-100 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 shadow-card hover:shadow-xl transition">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-book-open text-coral"></i>
+                            <span class="text-xs font-bold tracking-widest text-gray-400 uppercase" data-i18n="book_badge">Öne Çıkan Eser</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-navy mb-3">Başarmanın Ahlakı</h3>
+                        <p class="text-gray-600 mb-6" data-i18n="book_desc">Başarı sadece akademik bir sonuç değil, ahlaki bir duruştur. Kalbi ve zihni aynı anda inşa eden bir manifesto.</p>
+                        <div class="flex gap-4">
+                            <a href="#kitap" class="px-6 py-2 bg-navy text-white rounded-lg text-sm font-medium hover:bg-opacity-90 transition" data-i18n="btn_book_view">Kitabı İncele</a>
+                            <a href="#" class="px-6 py-2 border border-gray-200 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-50 transition" data-i18n="btn_book_review">Okur Yorumları</a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-48 h-64 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center text-gray-300 shrink-0">
+                        <div class="w-32 h-48 bg-navy shadow-2xl rounded-sm flex flex-col items-center justify-center p-4 text-center border-l-4 border-white/20">
+                            <span class="text-white font-serif text-sm italic">Adem Teker</span>
+                            <span class="text-coral font-bold font-serif text-lg mt-2 leading-none">Başarmanın<br>Ahlakı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us (Trust) -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="absolute -top-10 -left-10 w-20 h-20 text-coral opacity-20 text-9xl font-serif">"</div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-6" data-i18n="why_title">Neden Adem Teker ile Çalışmalısınız?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                                <i class="fas fa-microscope text-coral"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-lg" data-i18n="why_1_title">Analitik Takip Sistemi</h4>
+                                <p class="text-gray-600 text-sm" data-i18n="why_1_desc">Deneme analizleri ile eksik konuları nokta atışı tespit ediyor, butik çalışıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                                <i class="fas fa-seedling text-sage"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-lg" data-i18n="why_2_title">%100 Organik Gelişim</h4>
+                                <p class="text-gray-600 text-sm" data-i18n="why_2_desc">Yapay motivasyonlar yerine, öğrencinin iç disiplinini geliştiren, kalıcı ve sağlıklı bir başarı modeli.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                                <i class="fas fa-comments text-navy"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-lg" data-i18n="why_3_title">Kurumsal & Bireysel Tecrübe</h4>
+                                <p class="text-gray-600 text-sm" data-i18n="why_3_desc">Simya Koleji yöneticiliği ve yılların özel ders tecrübesiyle hem kurumsal ciddiyet hem bireysel ilgi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=400&q=80" class="rounded-2xl shadow-lg mt-12 w-full h-64 object-cover" alt="Ders">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Kitap">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div>
+                    <h2 class="text-4xl font-serif font-bold text-navy mb-6" data-i18n="contact_title">Geleceğinizi Birlikte Tasarlayalım</h2>
+                    <p class="text-gray-600 mb-8" data-i18n="contact_desc">İster Bursa'da yüz yüze, ister online platformda. Sınav koçluğu, İngilizce özel ders veya kurumsal danışmanlık talepleriniz için formu doldurun.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 group cursor-pointer">
+                            <div class="w-14 h-14 bg-cream rounded-full flex items-center justify-center group-hover:bg-coral group-hover:text-white transition duration-300">
+                                <i class="fas fa-map-marker-alt text-xl text-navy group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy" data-i18n="loc_title">Lokasyonlar</h4>
+                                <p class="text-gray-500 text-sm">Bursa (Nilüfer/Odunluk) & Kahramanmaraş</p>
+                            </div>
+                        </div>
+                        
+                        <a href="tel:05362460587" class="flex items-center gap-4 group cursor-pointer">
+                            <div class="w-14 h-14 bg-cream rounded-full flex items-center justify-center group-hover:bg-coral group-hover:text-white transition duration-300">
+                                <i class="fas fa-phone text-xl text-navy group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy" data-i18n="phone_title">İletişim & WhatsApp</h4>
+                                <p class="text-gray-500 text-sm">0 536 246 05 87</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-cream rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold text-navy mb-6" data-i18n="form_title">Randevu Formu</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-i18n="lbl_name">Öğrenci Adı</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-i18n="lbl_level">Sınıf / Seviye</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-navy bg-white">
+                                    <option>LGS (8. Sınıf)</option>
+                                    <option>YKS (12. Sınıf)</option>
+                                    <option>Ara Sınıf</option>
+                                    <option>İlköğretim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-i18n="lbl_phone">Telefon (Veli)</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1" data-i18n="lbl_message">Mesajınız</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-navy text-white font-bold py-4 rounded-lg hover:bg-coral transition duration-300 shadow-lg" data-i18n="btn_submit">
+                            Başvuru Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="font-serif font-bold text-2xl">Adem Teker</span>
+                    <p class="text-gray-400 text-sm mt-4" data-i18n="footer_desc">Simya Eğitim Kurumları Yöneticisi, Yazar ve Profesyonel Eğitim Koçu. Başarı tesadüf değildir, tasarlanır.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4" data-i18n="footer_quick">Hızlı Erişim</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#hakkimda" class="hover:text-coral transition" data-i18n="nav_about">Hakkımda</a></li>
+                        <li><a href="#hizmetler" class="hover:text-coral transition" data-i18n="nav_services">Hizmetlerimiz</a></li>
+                        <li><a href="#kitap" class="hover:text-coral transition" data-i18n="nav_book">Başarmanın Ahlakı</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-500">&copy; 2025 Adem Teker. <span data-i18n="rights">Tüm hakları saklıdır.</span></p>
+                <p class="text-xs text-gray-600">Designed for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Sticky -->
+    <a href="https://wa.me/905362460587" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition duration-300 hover:-translate-y-1 animate-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // --- LANGUAGE DATA ---
+        const translations = {
+            tr: {
+                tagline: "Eğitim & Koçluk",
+                nav_about: "Hakkımda",
+                nav_services: "Hizmetler",
+                nav_book: "Başarmanın Ahlakı",
+                nav_blog: "Blog & Kaynaklar",
+                nav_cta: "Randevu Al",
+                nav_contact_mobile: "İletişime Geç",
+                hero_badge: "Eğitim ve Yaşam Mimarı",
+                hero_title_1: "Kalbi eğitmeden",
+                hero_title_2: "zihni eğitmek",
+                hero_title_3: "eksik kalır.",
+                hero_desc: "LGS, YKS ve KPSS süreçlerinde %100 Organik Başarı için stratejik koçluk, NLP destekli dil eğitimi ve psikolojik sağlamlık. Bursa ve Kahramanmaraş ekseninde geleceği tasarlıyoruz.",
+                hero_cta_primary: "Sınav Koçluğu Al",
+                hero_cta_secondary: "Tanıtımı İzle",
+                stat_title: "Net Artışı",
+                stat_desc: "Süre yetiştirme sorununa kesin çözüm.",
+                exp_box: "Yıllık Tecrübe &<br>Eğitim Yönetimi",
+                services_sub: "Eğitim Metodolojisi",
+                services_title: "Hizmet Alanları",
+                services_intro: "Sadece ders anlatan bir hoca değil, öğrencinin potansiyelini açığa çıkaran bir yol arkadaşı.",
+                service_exam_title: "Profesyonel Sınav Koçluğu",
+                service_exam_desc: "Süre yetiştirememe sorununa çözümler, 12 aylık sıkı takip, dikkat dağınıklığı analizi ve kişiye özel çalışma programı.",
+                btn_details: "Detaylı İncele",
+                service_nlp_title: "NLP Destekli İngilizce",
+                service_nlp_desc: "2-8. Sınıflar ve LGS İngilizcesi. Ezber yok, hafıza teknikleriyle kalıcı öğrenme var.",
+                service_life_title: "Yaşam & Öğrenci Koçluğu",
+                service_life_desc: "Sınav stresi, aile iletişimi ve ergenlik dönemi kriz yönetimi. 'Dert Dinleme' seansları.",
+                btn_appointment: "Randevu Oluştur →",
+                book_badge: "Öne Çıkan Eser",
+                book_desc: "Başarı sadece akademik bir sonuç değil, ahlaki bir duruştur. Kalbi ve zihni aynı anda inşa eden bir manifesto.",
+                btn_book_view: "Kitabı İncele",
+                btn_book_review: "Okur Yorumları",
+                why_title: "Neden Adem Teker ile Çalışmalısınız?",
+                why_1_title: "Analitik Takip Sistemi",
+                why_1_desc: "Deneme analizleri ile eksik konuları nokta atışı tespit ediyor, butik çalışıyoruz.",
+                why_2_title: "%100 Organik Gelişim",
+                why_2_desc: "Yapay motivasyonlar yerine, öğrencinin iç disiplinini geliştiren, kalıcı ve sağlıklı bir başarı modeli.",
+                why_3_title: "Kurumsal & Bireysel Tecrübe",
+                why_3_desc: "Simya Koleji yöneticiliği ve yılların özel ders tecrübesiyle hem kurumsal ciddiyet hem bireysel ilgi.",
+                contact_title: "Geleceğinizi Birlikte Tasarlayalım",
+                contact_desc: "İster Bursa'da yüz yüze, ister online platformda. Sınav koçluğu, İngilizce özel ders veya kurumsal danışmanlık talepleriniz için formu doldurun.",
+                loc_title: "Lokasyonlar",
+                phone_title: "İletişim & WhatsApp",
+                form_title: "Randevu Formu",
+                lbl_name: "Öğrenci Adı",
+                lbl_level: "Sınıf / Seviye",
+                lbl_phone: "Telefon (Veli)",
+                lbl_message: "Mesajınız",
+                btn_submit: "Başvuru Gönder",
+                footer_desc: "Simya Eğitim Kurumları Yöneticisi, Yazar ve Profesyonel Eğitim Koçu. Başarı tesadüf değildir, tasarlanır.",
+                footer_quick: "Hızlı Erişim",
+                rights: "Tüm hakları saklıdır."
+            },
+            en: {
+                tagline: "Education & Coaching",
+                nav_about: "About",
+                nav_services: "Services",
+                nav_book: "Ethics of Success",
+                nav_blog: "Blog & Resources",
+                nav_cta: "Get Appointment",
+                nav_contact_mobile: "Contact Us",
+                hero_badge: "Education & Life Architect",
+                hero_title_1: "Educating the mind",
+                hero_title_2: "without the heart",
+                hero_title_3: "is no education.",
+                hero_desc: "Strategic coaching for LGS, YKS, and KPSS exams, NLP-supported language training, and psychological resilience. Designing the future in Bursa and Kahramanmaraş.",
+                hero_cta_primary: "Get Exam Coaching",
+                hero_cta_secondary: "Watch Intro",
+                stat_title: "Score Increase",
+                stat_desc: "Definitive solution to time management issues.",
+                exp_box: "Years Experience &<br>Management",
+                services_sub: "Methodology",
+                services_title: "Service Areas",
+                services_intro: "Not just a teacher, but a companion who unlocks the student's potential.",
+                service_exam_title: "Professional Exam Coaching",
+                service_exam_desc: "Solutions for time management, 12-month close monitoring, distraction analysis, and personalized study programs.",
+                btn_details: "View Details",
+                service_nlp_title: "NLP Supported English",
+                service_nlp_desc: "Grades 2-8 and LGS English. No rote memorization, lasting learning with memory techniques.",
+                service_life_title: "Life & Student Coaching",
+                service_life_desc: "Exam stress, family communication, and crisis management. Professional listening sessions.",
+                btn_appointment: "Create Appointment →",
+                book_badge: "Featured Work",
+                book_desc: "Success is not just an academic result, but a moral stance. A manifesto building heart and mind simultaneously.",
+                btn_book_view: "View Book",
+                btn_book_review: "Reader Reviews",
+                why_title: "Why Work with Adem Teker?",
+                why_1_title: "Analytical Tracking System",
+                why_1_desc: "We pinpoint missing topics with exam analysis and work as a boutique service.",
+                why_2_title: "100% Organic Growth",
+                why_2_desc: "A permanent and healthy success model that develops internal discipline instead of artificial motivation.",
+                why_3_title: "Corporate & Individual Experience",
+                why_3_desc: "Both corporate seriousness and individual attention with Simya College management and years of private tutoring experience.",
+                contact_title: "Let's Design Your Future",
+                contact_desc: "Face to face in Bursa or online. Fill out the form for exam coaching, private English lessons, or consultancy.",
+                loc_title: "Locations",
+                phone_title: "Contact & WhatsApp",
+                form_title: "Appointment Form",
+                lbl_name: "Student Name",
+                lbl_level: "Grade / Level",
+                lbl_phone: "Phone (Parent)",
+                lbl_message: "Your Message",
+                btn_submit: "Send Application",
+                footer_desc: "Simya Education Institutions Manager, Author, and Professional Education Coach. Success is not a coincidence, it is designed.",
+                footer_quick: "Quick Access",
+                rights: "All rights reserved."
+            }
+        };
+
+        function setLanguage(lang) {
+            // Update text content
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    if(el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = translations[lang][key];
+                    } else {
+                        el.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+
+            // Update UI styles for buttons
+            if(lang === 'tr') {
+                document.getElementById('btn-tr').classList.add('lang-active', 'text-coral');
+                document.getElementById('btn-tr').classList.remove('text-gray-400');
+                document.getElementById('btn-en').classList.remove('lang-active', 'text-coral');
+                document.getElementById('btn-en').classList.add('text-gray-400');
+                document.documentElement.lang = 'tr';
+            } else {
+                document.getElementById('btn-en').classList.add('lang-active', 'text-coral');
+                document.getElementById('btn-en').classList.remove('text-gray-400');
+                document.getElementById('btn-tr').classList.remove('lang-active', 'text-coral');
+                document.getElementById('btn-tr').classList.add('text-gray-400');
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        // --- STANDARD SCRIPTS ---
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md', 'bg-white/95');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach((el) => {
+            el.classList.add('transition', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
